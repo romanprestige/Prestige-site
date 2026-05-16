@@ -37,6 +37,21 @@
     box-shadow: 0 0 20px rgba(201,162,58,0.4);
     transition: all 0.3s ease;
 }
+    .fade-up {
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
     .primary {
       background: #C9A23A;
       color: black;
@@ -221,7 +236,7 @@ button {
 <a href="#contact" class="btn primary">Get Started</a>
 
 </div>
-    <section class="section fade-up" id="services">
+    <div class="container fade-up" id="home">
   <h2>Why Businesses Choose Prestige</h2>
 
   <div class="cards">
